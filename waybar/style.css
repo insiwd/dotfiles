@@ -1,0 +1,129 @@
+/* @import url("./rose-pine-dawn.css"); */
+@import url("/home/ruan/.cache/wal/colors-waybar.css");
+@import url("./colors.css");
+
+@define-color bg @background;
+@define-color fg @foreground;
+@define-color textcolor @cursor;
+
+* {
+    transition: 150ms;
+}
+
+#waybar {
+    /* old */
+    background: @bg;
+    color: @fg;
+
+    /* new */
+    /* background-color: @base00; */
+    /* color: @base0F; */
+    
+}
+
+.modules-right {
+    /* margin-right: 4px; */
+    padding-right: 10px;
+    padding-left: 5px;
+}
+
+/* #tray > widget { */
+    /* border-radius: 1rem; */
+    /* background-color: @fg; */
+/* } */
+
+#tray > widget > image {
+    padding: 0 0.2rem;
+}
+
+label.module {
+    font-family: "JetbrainsMono Nerd Font Propo", monospace, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0 10px;
+    margin: 2px 0;
+    border-radius: 1rem;
+}
+#clock {
+    /* color: @base0F; */
+    color: @cursor;
+}
+#network,
+#pulseaudio {
+    padding: 0 0.3rem 0 0.7rem;
+    font-size: 16px;
+}
+
+/* label.module:hover, */
+/* #tray > widget:hover { */
+    /* background: @base03; */
+/* } */
+
+#tags,
+#workspaces {
+    margin: 2px;
+    padding: 0 4px;
+    border-radius: 1rem;
+    background: none;
+}
+
+#tags button,
+#workspaces button {
+    font-size: 0;
+    min-width: 4px;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    margin: 9px 4px;
+    border-radius: 1rem;
+}
+
+#tags button,
+#workspaces button.empty {
+    /* pywal colors */
+    background: @color8;
+    /* color: @fg; */
+
+    /* new */
+    /* background: @base05; */
+    /* color: @base0D; */
+}
+
+#workspaces button{
+    /* pywal colors */
+    background: @color10;
+
+    /* e-ink: */
+    /* background: @green; */
+}
+
+/* #tags button.focused, */
+/* #tags button.occupied, */
+/* #workspaces button, */
+/* #workspaces button.active { */
+    /* background: @rose; */
+    /* background: @green; */
+/* } */
+
+#tags button.focused,
+#workspaces button.active {
+    min-width: 1.75rem;
+    margin: 8px 0.3rem;
+}
+
+#tags button.urgent,
+#workspaces button.urgent {
+    /* background: @love; */
+    background: @red;
+}
+
+button:hover {
+  box-shadow: none; 
+  text-shadow: none; 
+  background: none;
+  transition: none;
+}
+
+#workspaces button:hover {
+  border-color: transparent;
+}

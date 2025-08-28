@@ -1,0 +1,72 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 28,
+    "reload_style_on_change": true,
+    "modules-left": [
+        "niri/workspaces"
+	//"cava",
+	//"custom/media#1",
+	//"custom/media#2",
+	//"custom/media#3",
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+    "pulseaudio",
+    "tray",
+    ],
+   "river/tags": {
+        "num-tags": 5,
+    },
+    "niri/workspaces": {
+        "all-outputs": false,
+        "disable-scroll": false,
+	    "format" : "●",
+    },
+  "pulseaudio": {
+        "format": "{icon}|", 
+        "format-icons": ["󰕿 ", "󰖀 ", "󰕾 "],
+        "format-muted": "󰝟 ",
+        //"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+	"on-click": "pavucontrol",
+        "tooltip-format": "{volume}% ({desc})",
+        "scroll-step": 5,
+    },
+    "clock": {
+      "interval": 60,
+      "timezones": ["America/Maceio"],
+      "locale": "pt_BR.UTF-8",
+      "format": "{:L%a, %d.%m %H:%M}",
+      "tooltip-format": "<tt><small>{calendar}</small></tt>",
+      "calendar": {
+          "mode-mon-col": 3,
+          "format": {
+              "months": "<b>{}</b>",
+              "days": "{}",
+              "weeks": "<b>{:%W}</b>",
+              "weekdays": "<b>{}</b>",
+              "today": "<b><u>{}</u></b>",
+          },
+      },
+      "actions": {
+          "on-click": "mode",
+          "on-scroll-up": "shift_up",
+          "on-scroll-down": "shift_down",
+      },
+    },
+    "tray": {
+        "icon-size": 14,
+        "spacing": 2,
+    },
+    "custom/notifications": {
+        "format": "{}",
+        "on-click": "swaync-client -t -sw",
+        "exec": "~/.config/waybar/scripts/waybar-notification.sh",
+        "tooltip": false,
+        "interval": 1
+    }
+}
+
+// vi:ft=hjson
