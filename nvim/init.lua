@@ -837,7 +837,7 @@ require("lazy").setup({
 		priority = 1000,
 		config = function()
 			-- Este código só é executado após o plugin ser carregado
-			vim.cmd.colorscheme("kanagawa-dragon")
+			vim.cmd.colorscheme("kanagawa-wave")
 		end,
 	},
 
