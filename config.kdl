@@ -227,12 +227,12 @@ window-rule {
 	open-maximized true
     
 }
-window-rule {
-	match app-id="kitty"
-	open-floating true
-	default-column-width { fixed 900; }
-        default-window-height { fixed 500; }
-}
+//window-rule {
+//	match app-id="kitty"
+//	open-floating true
+//	default-column-width { fixed 900; }
+//        default-window-height { fixed 500; }
+//}
 
 window-rule {
     match app-id="Code"
