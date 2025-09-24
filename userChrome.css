@@ -1,0 +1,11 @@
+
+
+/*** Hide Tab Close buttons ***/
+.tabbrowser-tab .tab-close-button {
+  visibility: collapse !important;
+}
+
+#back-button, #forward-button {
+  display: none;
+}
+

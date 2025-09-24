@@ -1,0 +1,22 @@
+/* Hide Image and Link copied toast notifications but preserve fullscreen notifications */
+.inner > div:first-child .overlayinfobubble.show {
+  display: none;
+}
+
+.overlayinfobubble.show {
+  display: none !important;
+}
+
+
+#header {
+    display: none;
+}
+
+.tab.active .tab-header .favicon:not(.svg) {
+filter: none !important;
+}
+
+* {
+    font-family: Cantarell;
+		font-weight: Bold;
+}

@@ -1,0 +1,29 @@
+# You can preview the config here
+theme="/home/ruan/.cache/wal/colors-ghostty"
+
+adjust-cursor-thickness = 3
+
+resize-overlay = never
+cursor-style = block
+shell-integration-features = no-cursor
+
+font-size = 14
+font-family = CommitMono Nerd Font Propo
+
+selection-invert-fg-bg = true
+
+confirm-close-surface = false
+
+shell-integration = fish
+
+clipboard-read = allow
+
+clipboard-write = allow
+
+clipboard-paste-protection = false
+
+window-decoration = none
+
+# theme = Tomorrow Night Bright
+
+bold-is-bright = true
