@@ -14,6 +14,8 @@
     /* old */
     background: @bg;
     color: @fg;
+		
+		border-radius: 0 0 0px 0px;
 
     /* new */
     /* background-color: @base00; */

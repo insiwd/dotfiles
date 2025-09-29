@@ -8,7 +8,11 @@ cursor-style = block
 shell-integration-features = no-cursor
 
 font-size = 14
+#font-family = JetBrainsMono Nerd Font 
 font-family = CommitMono Nerd Font Propo
+#font-family = Cascadia Code 
+font-style = Bold
+font-style-italic = Bold Italic
 
 selection-invert-fg-bg = true
 
