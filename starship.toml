@@ -63,11 +63,11 @@ Pop = ""
 show_always = true
 # format = '[ 📂]($style)'
 #format = '[ 🍀]($style)'
-format = '[ λ ]($style)'
+format = '[ λ ](bold white)'
 
 [directory]
 # style = "fg:color_fg0 bg:color_yellow"
-format = "[ $path]($style)"
+format = "[ $path](bold white)"
 truncation_length = 3
 truncation_symbol = "…/"
 
@@ -79,6 +79,7 @@ truncation_symbol = "…/"
 "Dev" = "󰲋 "
 "JAVA" = " -"
 "Games" = "🎮"
+
 [git_branch]
 symbol = ""
 #style = "bg:color_aqua"
@@ -90,8 +91,9 @@ format = '[[($all_status$ahead_behind )](fg:color_fg0)]($style)'
 
 [nodejs]
 symbol = ""
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+#style = "bg:color_blue"
+#format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+format = '[ $symbol( $version) ]($style)'
 
 [c]
 symbol = " "
