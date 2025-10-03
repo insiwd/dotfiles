@@ -1,0 +1,13 @@
+#general.import = ["~/.cache/wal/colors-alacritty.toml"]
+
+general.import = ["colors.toml"]
+
+[font]
+size = 14
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold" 
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"

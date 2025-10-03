@@ -1,5 +1,6 @@
 # You can preview the config here
-theme="/home/ruan/.cache/wal/colors-ghostty"
+#theme="/home/ruan/.cache/wal/colors-ghostty"
+#theme = "matugen-theme.css"
 
 adjust-cursor-thickness = 3
 
@@ -8,11 +9,13 @@ cursor-style = block
 shell-integration-features = no-cursor
 
 font-size = 14
-#font-family = JetBrainsMono Nerd Font 
-font-family = CommitMono Nerd Font Propo
+font-family = JetBrainsMono Nerd Font 
+#font-family = CommitMono Nerd Font Propo
 #font-family = Cascadia Code 
-font-style = Bold
-font-style-italic = Bold Italic
+#font-style = Bold
+#font-style-italic = Bold Italic
+
+copy-on-select = false
 
 selection-invert-fg-bg = true
 
@@ -31,3 +34,6 @@ window-decoration = none
 # theme = Tomorrow Night Bright
 
 bold-is-bright = true
+gtk-custom-css = /home/ruan/.config/ghostty/themes/matugen.css
+gtk-tabs-location = bottom
+theme = noctalia
